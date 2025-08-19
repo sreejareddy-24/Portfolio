@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-image: url('{{ url_for("static", filename="red-bg2.jpg") }}');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+        .projects-container {
+            background-color: rgba(0,0,0,0.6); /* semi-transparent overlay */
+            padding: 50px 30px;
+            border-radius: 12px;
+        }
+        .project {
+            background-color: rgba(255,255,255,0.1);
+            padding: 25px;
+            margin-bottom: 30px;
+            border-radius: 12px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .project:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+        }
+        .project h3{
+            color: #ff4d4d;
+        }
+        .project p, .project li {
+            color: whitesmoke;
+        }
+        .btn-danger {
+            background-color: #ff4d4d;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container py-5 projects-container">
+    <h1 class="mb-5 text-center" style="color:#ff4d4d;"><strong>Projects</strong> </h1>
+
+    <div class="project">
+        <h3><strong>MyStudyLife</strong></h3>
+        <p>A web app to manage your classes, assignments, and exams efficiently.</p>
+        <p><strong>Technologies: </strong>Python, Flask, MySQL, HTML, CSS, JS</p>
+        <ul>
+            <li>Create, edit, and delete schedules and tasks</li>
+            <li>Track assignments and exam dates</li>
+            <li>User-friendly responsive interface</li>
+        </ul>
+        <a href="https://github.com/sreejareddy-24/MyStudyLife" target="_blank" class="btn btn-danger btn-sm">View Code</a>
+    </div>
+
+    <div class="project">
+        <h3><strong>Portfolio Website</strong></h3>
+        <p>Personal portfolio to showcase my projects, skills, and resume online.</p>
+        <p><strong>Technologies:</strong> HTML, CSS, Bootstrap, Flask</p>
+        <ul>
+            <li>Responsive landing page with navigation</li>
+            <li>Integrated contact form with Flask backend</li>
+            <li>Showcases projects, resume, and social links</li>
+        </ul>
+        <a href="https://github.com/sreejareddy-24/Portfolio" target="_blank" class="btn btn-danger btn-sm">View Code</a>
+    </div>
+
+</div>
+
+</body>
+</html>
