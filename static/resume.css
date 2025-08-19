@@ -1,10 +1,15 @@
-<<<<<<< HEAD
-body{
-    background-image: url(red-bg2.jpg);
-    color: whitesmoke;
-=======
-body{
-    background-image: url(red-bg2.jpg);
-    color: whitesmoke;
->>>>>>> 231076d4658195f666714c695d5b79fb0f2b9504
-}
+    body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        background-image: url('/static/red-bg2.jpg');
+        color:whitesmoke;
+        line-height: 1.6;
+    }
+
+    .container {
+        max-width: 900px;
+        border-color: whitesmoke;
+        padding: 30px;
+        border-radius: 12px;
+        box-shadow: 0px 4px 12px rgba(0,0,0,0.1);
+        margin-top: 40px;
+    }
