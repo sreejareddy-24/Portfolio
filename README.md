@@ -3,7 +3,7 @@
 A responsive personal portfolio built using HTML, CSS, and Python (Flask) to showcase my skills, projects, and achievements. This portfolio highlights my work, experiences, and provides a way to connect with me professionally. 
 
 ## Tech Stack  
-- Frontend: HTML, CSS
+- Frontend: HTML, CSS (Bootstrap)
 - Backend: Python (Flask framework)
 - Other: Bootstrap (for responsive design) 
 
@@ -16,7 +16,7 @@ A responsive personal portfolio built using HTML, CSS, and Python (Flask) to sho
 ## Screenshots
 
 ### Homepage
-![Homepage](static/images/home.png)
+![Homepage](static/images/Home.png)
 
 ### Resume
 ![Resume](static/images/Resume.png)
