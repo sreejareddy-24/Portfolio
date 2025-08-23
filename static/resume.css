@@ -1,15 +1,29 @@
     body {
-        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        font-family: Arial, sans-serif;
         background-image: url('/static/red-bg2.jpg');
-        color:whitesmoke;
-        line-height: 1.6;
+        background-size: cover;
+        background-position: center;
+        color: white;
+        line-height: 1.6;   
+    }
+    h1,h2{
+        color: #ff4d4d;
+    }
+    .resume-container {
+        background-color:  rgba(0,0,0,0.6);
+        padding: 50px 30px;
+        border-radius: 12px;
     }
 
-    .container {
-        max-width: 900px;
-        border-color: whitesmoke;
-        padding: 30px;
-        border-radius: 12px;
-        box-shadow: 0px 4px 12px rgba(0,0,0,0.1);
-        margin-top: 40px;
+    .resume{
+       background-color: rgba(255,255,255,0.1);
+       border-radius: 12px;
+       padding: 2%;
+       margin: 2%;
+       transition: transform 0.3s;
+    }
+
+    .resume:hover{
+        transform: translateY(-5px);
+        box-shadow: 0 10px 20px rgba(0,0,0,0.5);
     }
