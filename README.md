@@ -16,7 +16,7 @@ A responsive personal portfolio built using HTML, CSS, and Python (Flask) to sho
 ## Screenshots
 
 ### Homepage
-![Homepage](static/images/Home.png)
+![Homepage](static/images/home.png)
 
 ### Resume
 ![Resume](static/images/Resume.png)
