@@ -13,8 +13,19 @@
     
     
     <style>
+      body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.4); /* dim the background slightly */
+  z-index: -1;
+}
+
       body{
-        background-image: url('/static/red-bg2.jpg');
+        background-image: url('/static/images/red-bg2.jpg');
         color: whitesmoke;
         font-family: Arial, Helvetica, sans-serif;
         font-weight: 500;
@@ -23,19 +34,37 @@
       .contact-info p, .contact-info a {
         font-size: 1.1rem;
       }
+
+      h1{
+        color: #ff4d4d;
+      }
       .contact-form {
-        background-color: #fff;
+        background-color: rgba(0,0,0,0.6);
         padding: 30px;
+        margin-right: 30px;
         border-radius: 8px;
         box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
-        color:black;
+        color:whitesmoke;
       }
+      .btn-custom {
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+}
+
+.btn-custom:hover {
+  opacity: 0.85;
+}
+.btn:hover {
+  opacity: 0.85;
+}
+
     </style>
   </head>
   <body>
     <div class="container mt-5">
 
-      <h1 class="mb-4">Contact Me</h1>
+      <h1 class="mb-4"><strong>Contact Me</strong></h1>
 
       <div class="contact-info mb-5">
         <p><i class="bi bi-envelope-fill me-2"></i>Email: <a href="mailto:sreeja.reddy0524@gmail.com">sreeja.reddy0524@gmail.com</a></p>
@@ -45,10 +74,11 @@
         <p><i class="bi bi-geo-alt-fill me-2"></i>Location: Hyderabad, Telangana, India</p>
 
         <p><i class="bi bi-linkedin me-2"></i>
-          <a href="https://linkedin.com/in/sreeja-reddy-revoori-1b15412a5" target="_blank" class="btn btn-primary btn-sm me-2">LinkedIn</a>
+          <a href="https://linkedin.com/in/sreeja-reddy-revoori-1b15412a5" target="_blank" class="btn btn-sm me-2"
+            style="background-color: #0077b5; color: white; border: none;">LinkedIn</a>
 
           <i class="bi bi-github me-2"></i>
-          <a href="https://github.com/sreejareddy-24" target="_blank" class="btn btn-dark btn-sm">GitHub</a>
+          <a href="https://github.com/sreejareddy-24" target="_blank" class="btn btn-sm" style="background-color:   #333333; color: white; border: none;">GitHub</a>
         </p>
       </div>
 
@@ -58,7 +88,7 @@
 
 
       <div class="contact-form">
-        <h2 class="mb-4">Send a Message</h2>
+        <h2 class="mb-4" style="color: #ff4d4d;"><strong>Send a Message</strong></h2>
         <form action="/send_message" method="POST">
           <div class="mb-3">
             <label for="name" class="form-label">Name</label>
@@ -72,7 +102,8 @@
             <label for="message" class="form-label">Message</label>
             <textarea class="form-control" id="message" rows="4" name="msg" placeholder="Your Message" required></textarea>
           </div>
-          <button type="submit" class="btn btn-success">Send Message</button>
+          <button type="submit" class="btn btn-custom">Send Message</button>
+
         </form>
       </div>
 
